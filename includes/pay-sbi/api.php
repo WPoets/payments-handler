@@ -11,18 +11,26 @@ class SBI_Pay {
 	const METHOD = 'aes-256-gcm';
 	//static $prod_url = 'https://www.onlinesbi.com/merchant/merchantprelogin.htm';
 	//static $prod_url = 'https://www.onlinesbi.com/merchant/merchantprelogin.htm';
-	static $prod_url = 'https://merchant.onlinesbi.sbi/merchant/merchantprelogin.htm';
-	static $uat_url = 'https://uatmerchant.onlinesbi.sbi/merchantgst/merchantprelogin.htm';
+//	static $prod_url = 'https://merchant.onlinesbi.sbi/merchant/merchantprelogin.htm';
+//	static $uat_url = 'https://uatmerchant.onlinesbi.sbi/merchantgst/merchantprelogin.htm';
+
+	static $prod_url = 'https://merchant.sbi.bank.in/merchant/merchantprelogin.htm';
+	static $uat_url = 'https://merchant.sbiuat.bank.in/merchant/merchantprelogin.htm';
 
 	//static $uat_url_new = 'https://uatmerchant.onlinesbi.sbi/merchant/merchantprelogin.htm';
 	  //static $uat_url_new = 'https://uatmerchant.onlinesbi.sbi/merchant/merchantprelogin.htm';
-	  static $uat_url_new = 'https://uatmerchant.onlinesbi.sbi/merchant/merchantprelogin.htm';
-	  static $uat_verify_url_new = 'https://uatmerchant.onlinesbi.sbi/merchant/doubleverification.htm';
+	 // static $uat_url_new = 'https://uatmerchant.onlinesbi.sbi/merchant/merchantprelogin.htm';
+	//  static $uat_verify_url_new = 'https://uatmerchant.onlinesbi.sbi/merchant/doubleverification.htm';
+	 static $uat_url_new = 'https://merchant.sbiuat.bank.in/merchant/merchantprelogin.htm';
+	  static $uat_verify_url_new = 'https://merchant.sbiuat.bank.in/thirdparties/doubleverification.htm';
 
 	//static $prod_verify_url = 'https://www.onlinesbi.com/thirdparties/doubleverification.htm';
-	static $prod_verify_url = 'https://merchant.onlinesbi.sbi/thirdparties/doubleverification.htm';
+	//static $prod_verify_url = 'https://merchant.onlinesbi.sbi/thirdparties/doubleverification.htm';
+	static $prod_verify_url = 'https://merchant.sbi.bank.in/thirdparties/doubleverification.htm';	
 	//static $uat_verify_url = 'https://uatmerchant.onlinesbi.com/thirdparties/doubleverification.htm';
-	static $uat_verify_url = 'https://uatmerchant.onlinesbi.sbi/thirdparties/doubleverification.htm';
+	//static $uat_verify_url = 'https://uatmerchant.onlinesbi.sbi/thirdparties/doubleverification.htm';
+	static $uat_verify_url = 'https://merchant.sbiuat.bank.in/thirdparties/doubleverification.htm';
+		
 	
 	public static function make_string($args){
 			$str=array();
