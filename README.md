@@ -16,6 +16,12 @@ If you don't find your issue already listed, do [create an issue](https://github
 
 ### Changelog  
 
+##### 1.0.4
+* fixed compatibility issues with php 8+
+
+##### 1.0.3
+* Updated SBI URLS and decryption code
+
 ##### 1.0.1  
 * Bug fixes
 
