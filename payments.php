@@ -191,6 +191,7 @@ class aw2_razor_payments{
 	public $action=null;
 	public $atts=null;
 	public $content=null;
+	public $iv=null;
 	
 	public $api_key=null;
 	public $api_secret=null;
@@ -371,7 +372,7 @@ class aw2_razor_payments{
 			$json=\aw2_library::parse_shortcode($json);		
 			$return_value=json_decode($json, true);
 			if(is_null($return_value)){
-				\aw2_library::set_error('Invalid JSON' . $content); 
+				\aw2_library::set_error('Invalid JSON' . $this->content); 
 				$return_value=array();	
 			}
 		}
