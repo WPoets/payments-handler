@@ -3,7 +3,7 @@
 namespace aw2;
 
 \aw2_library::add_service('aw2.pay','Payments Library',['namespace'=>__NAMESPACE__]);
-function pay($atts,$content=null,$shortcode){
+function pay($atts,$content=null,$shortcode=null){
 	if(\aw2_library::pre_actions('all',$atts,$content,$shortcode)==false)return;
 	extract( \aw2_library::shortcode_atts( array(
 	'main'=>null,

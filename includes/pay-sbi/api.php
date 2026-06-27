@@ -102,7 +102,7 @@ class SBI_Pay {
 		
 		return $form;
 	}
-	public static function re_verify_payment($dev_mode='on', $data='',$merchant_code='',$key, $iv){
+	public static function re_verify_payment($dev_mode='on', $data='',$merchant_code='',$key=null, $iv=null){
 		
 		if(empty($data)){
 			\aw2_library::set_error('data is empty'); 
@@ -169,7 +169,7 @@ class SBI_Pay {
 		
 		return $vpairs;
 	}
-	public static function verify_payment($dev_mode='on', $encdata='',$merchant_code='',$key, $iv){
+	public static function verify_payment($dev_mode='on', $encdata='',$merchant_code='',$key=null, $iv=null){
 		
 		if(empty($encdata)){
 			\aw2_library::set_error('encdata is empty'); 
